@@ -1,0 +1,77 @@
+
+http://bytesofgigabytes.com/googlecloud/installing-apache-tomcat-on-google-cloud/
+sudo ./startup.sh
+
+sudo ./shutdown.sh
+
+
+sudo su
+mkdir precision-care
+cd precision-care/
+mkdir ui
+cd ui
+sudo apt-get install -y npm
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+source ~/.bashrc
+command -v nvm
+nvm install stable
+nvm alias default stable
+node -v
+sudo apt update
+sudo apt install git
+git clone https://source.developers.google.com/p/dca-sandbox-project-4/r/precision-care-ui
+
+
+*************************React UI building & deployment *************************
+git fetch --all
+git reset --hard origin/<development>
+
+npm install
+npm run build
+rm -r /tomcat/apache-tomcat-8.5.64/webapps/ROOT
+cp -R build/ /tomcat/apache-tomcat-8.5.64/webapps/ROOT
+
+rm -r /tomcat/apache-tomcat-8.5.64/webapps/precision-care-v2
+cp -R build/ /tomcat/apache-tomcat-8.5.64/webapps/precision-care-v2
+
+
+
+rm -r /tomcat/apache-tomcat-8.5.64/webapps/pophealth/dev
+cp -R -a build/. /tomcat/apache-tomcat-8.5.64/webapps/pophealth/dev/
+*************************./React UI building & deployment *************************
+
+cd mw/flask
+deactivate
+. bin/activate
+export FLASK_APP=main.py
+ps -fA | grep python
+kill <pid>
+flask run --host=0.0.0.0 (for debuging)
+
+pkill -9 python
+
+
+cp mw/main.py mw/flask/
+
+gunicorn -w 2 -b 0.0.0.0:5000 main:app --daemon
+
+gunicorn -w 2 -b 0.0.0.0:5000 app:app --daemon
+
+gunicorn -w 2 -b 0.0.0.0:9001 main:app --daemon
+
+
+uvicorn main:app --reload --host 0.0.0.0 --port 9001
+
+gunicorn -k uvicorn.workers.UvicornWorker -w 2 -b 0.0.0.0:9001 main:app --daemon
+
+ps aux | grep tomcat
+
+mkdir  mw/flask/api
+cp mw/api/* mw/flask/api/
+
+
+source env/bin/activate
+
+python3 -m pip install pyarrow
+
+

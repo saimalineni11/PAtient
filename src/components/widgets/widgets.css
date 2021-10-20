@@ -1,0 +1,244 @@
+.kpi{
+    padding: 0.4rem !important;
+    
+}
+
+.kpi .alignleft {
+	float: left;
+}
+.kpi .alignright {
+	float: right;
+}
+
+.kpi .per{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.kpi .kpi-heading{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  }
+
+  .kpi .kpi-sub-heading{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.015px;
+    font-feature-settings: 'case' on;
+    color: #97999B;
+  }
+
+.kpi .kpi-value{
+    font-size: 1rem;
+    margin-bottom: 0px !important;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 22px;
+    color: #005587;
+}
+
+.kpi .kpi-data{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.top-color{
+  border-top: 2px solid #6FC2B4;
+}
+
+
+.comorbidity-container {
+    display: flex;
+    border:2px solid #fff2e4;
+    flex-wrap: wrap;
+    max-height: 40%;
+    height: 40%;
+    overflow-y: scroll;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  
+  .comorbidity-box {
+    background-color: #ff8a65;
+    color: white;
+    padding: 5px;
+    margin: 2px 2px 0px 2px;
+    border-radius: 4px;
+    height: fit-content;
+  }
+  .pt-details-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  #search-bar-0{
+    margin-top: -35px !important;
+  }
+  .dataGrid {
+    margin-top: -35px !important;
+  }
+
+  .recent-clinical-grid{
+    margin-top: 10px !important;
+    min-height: 300px;
+  }
+
+
+
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+
+
+.widget-timeline-icon li .icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 29px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 40px;
+  left: -22px;
+  top: 0;
+  background-color: #2781d5 !important;
+
+}
+
+
+.widget-timeline-icon li {
+  padding-left: 30px;
+  position: relative;
+  border-left: 3px solid #2781d5 !important;
+  min-height: 80px;
+  padding-top: 1px;
+}
+
+.widget-treatment-timeline-icon li .icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 29px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 40px;
+  left: -22px;
+  top: 0;
+  background-color: #711685 !important;
+
+}
+
+
+.widget-treatment-timeline-icon li {
+  padding-left: 30px;
+  position: relative;
+  border-left: 3px solid #711685 !important;
+  min-height: 80px;
+  padding-top: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+.badge-drug-info {
+  color: #fff !important;
+  background-color: #1488CC !important;
+  font-size: 14px !important;
+  margin: 5px !important;
+}
+  
+.panel-body {
+  border: 1px solid #dddddd;
+  background: #efefef;
+  color: #333333;
+  padding: 5px;
+ 
+  margin: 5px;
+  min-width: 137px;
+  width: 250px;
+  }
+
+
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .collapse-btn-style{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .accordion-data-div{
+    margin-top: 15px;;
+  }
+
+  .custom-tooltip{
+    background-color: grey;
+    color: white;
+    padding: 8px;
+  }
+
+
+.sideinfo_widget-wrapper{
+  padding: 0;
+  margin: 0;
+}
+
+.widget_link{
+  cursor: pointer;
+  padding:10px 15px;
+  white-space: nowrap;
+}
+
+.widget_link-active,
+.widget_link:hover{
+  font-weight: 700;
+  background-color: violet;
+  color: #FFFFFF;
+  transition: all 0.3ms ease;
+}
+
+
+.patient_info-widget{
+  z-index: -1;
+}

@@ -1,0 +1,55 @@
+.filter{
+    font-size: 0.8rem ;
+    font-weight: normal;
+    margin-left: 12px;
+    
+}
+
+.filter-clearall{
+    color:  #005587;
+    cursor: pointer;
+}
+
+.filter-icon{
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    top: 5px !important;
+}
+
+.filter-text{
+    cursor: text;
+}
+
+
+.label-key{
+    margin-right: 2px;
+    font-size: 0.8rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.label-value{
+    font-size: 0.8rem;
+    color: #005587;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.MuiFormControlLabel-label{
+    font-size: 0.8rem !important;
+}
+
+.custom-control{
+    line-height: 1.5rem !important;
+}
+
+.modal-body{
+    padding: 0 !important;
+}
+
+.modal-header{
+    padding: 5px !important;
+}

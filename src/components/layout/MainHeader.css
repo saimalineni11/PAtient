@@ -1,0 +1,16 @@
+.ctc-header-bg {
+    background-color: #1e1e1e !important;
+    padding-left: 5px;
+    padding-right: 1px;
+}
+
+
+.ctc-del-image img {
+    height: 40px;
+    padding: 0.5rem;
+}
+
+.ctc-hcx-image img {
+    height: 80px;
+    padding: 0.5rem;
+}

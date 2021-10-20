@@ -1,0 +1,65 @@
+.search-label{
+    float: right;
+    margin : 1rem;
+  }
+  table thead .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  
+  table thead .dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+    content: "";
+  }
+  .react-bs-table-sizePerPage-dropdown{
+    display: none;
+  }
+  .table-heading{
+    margin:1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  table th{
+    background-color: #40a0ff;
+    color: white;
+    font-weight: bold;
+  }
+  .table-bordered th, .table-bordered td{
+    border-color: #c6e3ff !important;
+    font-size: 15px ;
+  }
+  .table-bordered{
+    border-radius: 18px;
+  }
+  .caret{
+    color: white!important;
+  }
+  .page-item.active .page-link {
+    color: white !important;
+    background-color: #40a0ff !important ;
+    border-color: #40a0ff !important;
+}
+.page-link {
+  color: #40a0ff !important;
+}
+.search-label {
+  float: right;
+  margin: 1rem;
+}
+.react-bootstrap-table .table tbody {
+  cursor: pointer;
+}
+
+.row .react-bootstrap-table-pagination {
+  padding-left: 7px;
+}
+
